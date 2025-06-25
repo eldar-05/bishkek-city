@@ -457,7 +457,7 @@
                     </nav>
 
                     <div class="tab-content shadow-lg mt-5" id="nav-tabContent">
-                    <!-- ФОРМА -->
+                    <!-- Форма -->
                     <div class="tab-pane fade show active" id="nav-ContactForm" role="tabpanel"
                         aria-labelledby="nav-ContactForm-tab">
                         <form id="contact-form" class="custom-form contact-form mb-5 mb-lg-0">
@@ -486,7 +486,7 @@
                         </form>
                     </div>
 
-                    <!-- КАРТА -->
+                    <!-- Карта -->
                     <div class="tab-pane fade" id="nav-ContactMap" role="tabpanel" aria-labelledby="nav-ContactMap-tab">
                         <iframe class="google-map"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2925.3140624451893!2d74.59491111577876!3d42.87462177915562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389ec81910e2b3f3%3A0x8e2a3d6de37d74cd!2z0JHQu9Cw0YHRgtC-0LzQvtCz0L4sINCY0L7RgNC-0LPRgNCw0L0!5e0!3m2!1sru!2skg!4v1718190900000!5m2!1sru!2skg"
@@ -512,7 +512,7 @@
                     return;
                 }
 
-                fetch("https://script.google.com/macros/s/AKfycby03ghkhYXaa6cx4EEHPvcjgFdYUkuq4VG8v6Xyr6ToCdtp8UCgCiIqYsPLfayWacIJ/exec", {
+                fetch("https://script.google.com/macros/s/AKfycbx1lTiedTJhC7IfjmSDXy5Z1tFl_HyGCYMxDc8VRVmClO5RMiqNirCAU6CGAQY3DZRh_w/exec", {
                     method: "POST",
                     headers: {
                     "Content-Type": "application/json"
@@ -530,10 +530,14 @@
                     } else {
                     alert("Ошибка при отправке.");
                     }
+                }).catch(error => {
+                    alert("Ошибка сети или сервера.");
+                    console.error(error);
                 });
                 });
             </script>
         </section>
+
 
     </main>
 
